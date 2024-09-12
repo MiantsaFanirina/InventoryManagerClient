@@ -11,3 +11,14 @@ export type SideNavItem = {
   submenu?: boolean;
   subMenuItems?: SideNavItem[];
 };
+
+
+export type ProductType = {
+  id: string;
+  title: string;
+  img: string;
+  purchasePrice: number;
+  sellingPrice: number;
+  manufacturer: string;
+  category: "drink" | "dairyProduct";
+};

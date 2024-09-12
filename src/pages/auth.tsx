@@ -40,7 +40,7 @@ export default function AuthPage () {
       const currentImage = document.querySelector(`.img-${index}`)
       const images = document.querySelectorAll('.image')
       images.forEach((img) => img.classList.remove('show'))
-      currentImage.classList.add('show')
+      currentImage?.classList.add('show')
 
       const textSlider = document.querySelector('.text-group')
       textSlider.style.transform = `translateY(${-1 * (index - 1) * 2.2}rem)`
