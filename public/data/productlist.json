@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Coca Cola GM",
+        "img": "https://ryliegold.wordpress.com/wp-content/uploads/2018/10/cocacola-sans-serif.jpg?w=748",
+        "purchasePrice": 2500,
+        "sellingPrice": 3500,
+        "manufacturer": "Coca Cola Company",
+        "category": "drink"
+    },
+    {
+        "id": 2,
+        "title": "Coca Cola PM",
+        "img": "https://ryliegold.wordpress.com/wp-content/uploads/2018/10/cocacola-sans-serif.jpg?w=748",
+        "purchasePrice": 1500,
+        "sellingPrice": 2200,
+        "manufacturer": "Coca Cola Company",
+        "category": "drink"
+    },
+    {
+        "id": 3,
+        "title": "Sprite PM",
+        "img": "https://cms.novafm.com.au/wp-content/uploads/2023/07/Screen-Shot-2023-07-13-at-1.21.11-pm.png",
+        "purchasePrice": 1400,
+        "sellingPrice": 2100,
+        "manufacturer": "Coca Cola Company",
+        "category": "drink"
+    },
+    {
+        "id": 4,
+        "title": "Fanta GM",
+        "img": "https://static.vecteezy.com/ti/vecteur-libre/p1/7978621-fanta-logo-de-la-marque-de-boisson-populaire-vinnytsia-ukraine-16-mai-202-gratuit-vectoriel.jpg",
+        "purchasePrice": 2500,
+        "sellingPrice": 3500,
+        "manufacturer": "Coca Cola Company",
+        "category": "drink"
+    },
+    {
+        "id": 5,
+        "title": "Mozarella",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVDaQvoksNfy--ZtdfUa7xFttKfvShTEASA&s",
+        "purchasePrice": 5000,
+        "sellingPrice": 7000,
+        "manufacturer": "Lactalis Group",
+        "category": "dairyProduct"
+    },
+    {
+        "id": 6,
+        "title": "Beurre Tiko",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4WeTFJ1lafKEMgjqaqilr308LECeGDp8WQ&s",
+        "purchasePrice": 3000,
+        "sellingPrice": 4500,
+        "manufacturer": "Tiko Group",
+        "category": "dairyProduct"
+    }
+]

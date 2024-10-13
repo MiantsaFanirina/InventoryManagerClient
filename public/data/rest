@@ -1,0 +1,19 @@
+
+    {
+        "id": 7,
+        "title": "Black Label",
+        "img": "https://i.pinimg.com/originals/dd/48/a4/dd48a470db125f7ff3f25c5ee1be8855.jpg",
+        "purchasePrice": 10000,
+        "sellingPrice": 15000,
+        "manufacturer": "Johnnie Walker",
+        "category": "drink"
+    },
+    {
+        "id": 8,
+        "title": "Fromage la vache qui rit",
+        "img": "https://lavachequirittpe.wordpress.com/wp-content/uploads/2016/12/vache-qui-rit.jpg?w=500",
+        "purchasePrice": 4000,
+        "sellingPrice": 5500,
+        "manufacturer": "Bel Group",
+        "category": "dairyProduct"
+    }

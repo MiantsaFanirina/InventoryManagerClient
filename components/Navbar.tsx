@@ -10,7 +10,8 @@ import * as Icon from 'react-feather';
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { ThemeContext } from "./Provider";
 import { SidebarMenu } from './Sidebar';
-
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Image from "next/image";
 
 
 export default function NavbarComponent() {
@@ -33,7 +34,7 @@ export default function NavbarComponent() {
     }
 
     return (
-        <header className="sticky top-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-primary dark:bg-background dark:text-white text-sm py-4 dark:border-gray-600 border-b border-gray-600">
+        <header className="sticky top-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-primary dark:bg-slate-950 dark:text-white text-sm py-4">
             <nav className="max-w-full w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
                 <div className="flex items-center justify-between w-full">
                     <div className="flex items-center">
@@ -42,7 +43,9 @@ export default function NavbarComponent() {
                                 <SheetTrigger className='text-white mt-2'><Menu /></SheetTrigger>
                                 <SheetContent side={"left"} className="w-[300px] sm:w-[340px]">
                                     <SheetHeader>
-                                        <SheetTitle className='text-left text-xl font-bold ml-3'>Brand</SheetTitle>
+                                        <SheetTitle className='text-left text-xl font-bold ml-3'>
+                                            <Image src="/logo.png" width={50} height={50} alt="logo" />
+                                        </SheetTitle>
                                         <SheetDescription>
                                             <SidebarMenu />
                                         </SheetDescription>
@@ -50,21 +53,24 @@ export default function NavbarComponent() {
                                 </SheetContent>
                             </Sheet>
                         </div>
-                        <a className="flex-none text-xl ml-4 font-semibold text-white" href="/dashboard">Brand</a>
+                        <a className="flex-none text-xl ml-4 font-semibold text-white" href="/dashboard">
+                            <Image src="/logo.png" width={50} height={50} alt="logo" />
+                        </a>
                     </div>
                     <div className="flex items-center">
-                        <DarkModeSwitch
-                            className='mr-2 text-white sm:block'
-                            checked={theme?.theme === 'dark'}
-                            onChange={onDarkModeToggle}
-                            size={20} />
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
-                                <a className="font-medium text-white" href="#" aria-current="page">Username</a>
+                                <a className="font-medium text-white" href="#" aria-current="page">
+                                    
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                </a>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="start">
                                 <DropdownMenuItem onClick={() => logout()} className="text-red-400 py-2">
-                                    <span><Icon.LogOut size={15} className="mr-2" /></span> Logout
+                                    <span><Icon.LogOut size={15} className="mr-2" /></span> Déconnexion
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>

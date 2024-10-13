@@ -6,20 +6,20 @@ import { SidebarMenu } from "../../components/Sidebar";
 
 
 export const metadata: Metadata = {
-    title: 'Home',
-    description: 'Home Page',
+    title: 'Acceuil',
+    description: 'Acceuil',
 }
 function RootLayout({ children }: {
     children: React.ReactNode;
 }) {
     return (
-        <div>
+        <div className="w-full h-screen flex flex-col overflow-hidden">
             <NavbarComponent />
-            <div className="flex">
-                <div className="hidden sm:block">
+            <div className="flex h-full flex-1 overflow-hidden">
+                <div className="h-full hidden sm:block">
                     <SidebarMenu />
                 </div>
-                <main className="w-full p-4">{children}</main>
+                <main className="w-full h-full overflow-y-auto pb-10">{children}</main>
             </div>
         </div>
     );

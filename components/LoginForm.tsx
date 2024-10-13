@@ -69,7 +69,7 @@ function LoginForm() {
                         </FormItem>
                     )}
                 />
-                <Button loading={loading} type="submit">Masuk</Button>
+                <Button loading={loading} type="submit">Login</Button>
             </form>
         </Form >
     )
